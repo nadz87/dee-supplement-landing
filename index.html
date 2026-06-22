@@ -716,12 +716,20 @@ nav .nav-cta .btn-buy:hover {
   display: flex;
   justify-content: center;
 }
+.hotspot-image-wrap {
+  position: relative;
+  display: inline-block;
+}
 .hotspot-media .glow-ring {
   position: absolute;
   width: 18rem; height: 18rem;
   border-radius: 50%;
   border: 1px dashed rgba(0, 51, 160, 0.3);
   animation: rotateDashed 20s linear infinite;
+  top: 50%;
+  left: 50%;
+  margin-top: -9rem;
+  margin-left: -9rem;
 }
 @keyframes rotateDashed {
   from { transform: rotate(0deg); }
@@ -732,6 +740,7 @@ nav .nav-cta .btn-buy:hover {
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
   position: relative;
   z-index: 2;
+  display: block;
 }
 
 /* Pulsing Hotspot pins */
@@ -1204,7 +1213,7 @@ footer {
   #hero .hero-container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 4rem;
+    gap: 2.5rem;
   }
   #hero .content {
     align-items: center;
@@ -1215,27 +1224,35 @@ footer {
   #hero .hero-desc {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
   }
   #hero .hero-stats {
     justify-content: center;
+    gap: 1rem;
   }
   #hero .ctas {
     justify-content: center;
   }
   #hero .product-img {
-    max-height: 24rem;
+    max-height: 20rem;
   }
   .benefits-layout-grid {
     grid-template-columns: 1fr;
-    gap: 3.5rem;
+    gap: 2.5rem;
   }
   .benefit-col-center {
     order: -1;
   }
+  .benefit-product-wrapper {
+    max-width: 16rem;
+  }
+  #benefit-product-img {
+    max-height: 20rem;
+  }
   .calc-widget {
     grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 2.25rem;
+    gap: 2.5rem;
+    padding: 2rem;
   }
   .ingredients-grid {
     grid-template-columns: 1fr;
@@ -1243,31 +1260,89 @@ footer {
   }
   .hotspot-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   #nutrition-section {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   .checkout-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 2.5rem;
+    gap: 2.5rem;
+    padding: 2rem;
+  }
+  .checkout-media img {
+    max-height: 18rem;
   }
 }
 
 @media (max-width: 768px) {
-  nav { padding: 1rem 1.5rem; }
+  nav { padding: 0.75rem 1rem; }
+  nav .brand-logo img { height: 3rem !important; }
+  nav .nav-cta .btn-buy { padding: 0.5rem 1rem; font-size: 0.75rem; }
   nav .nav-links { display: none; }
-  .benefits-container { padding: 4rem 1.5rem; }
-  #calculator-section { padding: 4rem 1.5rem; }
-  #ingredients-section { padding: 4rem 1.5rem; }
-  #nutrition-section { padding: 4rem 1.5rem; }
-  #checkout-section { padding: 4rem 1.5rem; }
+  
+  #hero { padding-top: 5.5rem; padding-bottom: 3rem; min-height: auto; }
+  #hero h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); margin-bottom: 1rem; }
+  #hero .hero-desc { font-size: 0.95rem; margin-bottom: 1.5rem; }
+  #hero .brand-badge { margin-bottom: 1rem; }
+  #hero .hero-stats { margin-bottom: 1.5rem; }
+  #hero .stat-item { min-width: 6.5rem; padding: 0.5rem 0.75rem; }
+  #hero .stat-num { font-size: 1.35rem; }
+  #hero .cta-btn-primary { padding: 0.8rem 1.75rem; font-size: 0.85rem; }
+  #hero .cta-btn-secondary { padding: 0.8rem 1.5rem; font-size: 0.85rem; }
+  
+  .benefits-container { padding: 3.5rem 1rem; min-height: auto; }
+  .benefits-layout-grid .card { padding: 1.5rem; }
+  .benefits-layout-grid .card h3 { font-size: 1.25rem; }
+  
+  #calculator-section { padding: 3.5rem 1rem; }
+  #calculator-section h2 { font-size: 2rem; }
+  .calc-tab-btn { padding: 0.65rem; font-size: 0.75rem; }
+  
+  #ingredients-section { padding: 3.5rem 1rem; }
+  #ingredients-section h2 { font-size: 2rem; }
+  .ingredient-card { padding: 2rem 1.5rem; }
+  
+  #hotspot-section { padding: 3.5rem 1rem; }
+  #hotspot-section h2 { font-size: 2rem; }
+  .hotspot-media .glow-ring { width: 14rem; height: 14rem; margin-top: -7rem; margin-left: -7rem; }
+  .hotspot-media img { max-height: 18rem; }
+  .hotspot-card { padding: 1.5rem; }
+  
+  #nutrition-section { padding: 3.5rem 1rem; }
+  #nutrition-section .info-block h2 { font-size: 2rem; }
+  .supplement-panel { padding: 1rem; }
+  .supplement-panel h3 { font-size: 1.4rem; }
+  .supplement-header-row, .supplement-row { font-size: 0.75rem; }
+  
+  #checkout-section { padding: 3.5rem 1rem; }
+  .checkout-container { padding: 1.5rem; }
+  .checkout-form h2 { font-size: 1.85rem; margin-bottom: 0.25rem; }
+  .checkout-form .flavor-tag { margin-bottom: 1rem; font-size: 0.75rem; }
+  .checkout-form .price-block { margin-bottom: 1.5rem; }
+  .checkout-form .price-current { font-size: 2rem; }
+  .checkout-form .price-original { font-size: 1.25rem; }
+  
+  .flavor-options {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .flavor-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.65rem;
+    font-size: 0.85rem;
+  }
+  
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
   }
+  footer { padding: 3rem 1rem 1.5rem; }
+  .footer-about .logo { margin-bottom: 1rem; }
+  .footer-about .logo img { height: 4rem !important; }
 }
 </style>
 </head>
@@ -1479,11 +1554,13 @@ footer {
   <section id="hotspot-section">
     <div class="hotspot-container">
       <div class="hotspot-media">
-        <div class="glow-ring"></div>
-        <img src="product.png" alt="USN Whey gH Product breakdown" />
-        <!-- Interactive Pins -->
-        <div class="pin pin-1" onclick="showHotspot(1)"></div>
-        <div class="pin pin-2" onclick="showHotspot(2)"></div>
+        <div class="hotspot-image-wrap">
+          <div class="glow-ring"></div>
+          <img src="product.png" alt="USN Whey gH Product breakdown" />
+          <!-- Interactive Pins -->
+          <div class="pin pin-1" onclick="showHotspot(1)"></div>
+          <div class="pin pin-2" onclick="showHotspot(2)"></div>
+        </div>
       </div>
 
       <div class="hotspot-content">
@@ -1773,18 +1850,79 @@ footer {
           .from("#hero .ctas", { opacity: 0, y: 20, duration: 0.8, ease: "power3.out" }, "-=0.7")
           .from("#hero-product-3d", { opacity: 0, scale: 0.78, rotate: -6, duration: 1.3, ease: "back.out(1.6)" }, "-=1.2");
 
-  // ===================== GSAP HERO SCROLLTRIGGER FADE-OUT =====================
-  // Fade out hero content smoothly as user scrolls down
-  gsap.to("#hero .hero-container", {
-    opacity: 0,
-    y: -70,
-    ease: "power1.inOut",
-    scrollTrigger: {
-      trigger: "#hero",
-      start: "top top",
-      end: "bottom 30%",
-      scrub: true
-    }
+  // ===================== GSAP RESPONSIVE ANIMATIONS =====================
+  let mm = gsap.matchMedia();
+
+  // Desktop Context (width >= 1024px)
+  mm.add("(min-width: 1024px)", () => {
+    // Fade out hero content smoothly as user scrolls down
+    gsap.to("#hero .hero-container", {
+      opacity: 0,
+      y: -70,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: "#hero",
+        start: "top top",
+        end: "bottom 30%",
+        scrub: true
+      }
+    });
+
+    // Pins the benefits section while scrolling, animating elements in sequence
+    const benefitsTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#benefits-section",
+        start: "top top",
+        end: "+=150%",
+        pin: true,
+        scrub: 1,
+        anticipatePin: 1
+      }
+    });
+
+    benefitsTimeline
+      .from(".benefit-product-wrapper", {
+        scale: 0.65,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out"
+      })
+      .from("#benefit-card-1", {
+        x: -120,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out"
+      }, "-=0.6")
+      .from("#benefit-card-2", {
+        x: 120,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out"
+      }, "-=0.6")
+      .from("#benefit-card-3", {
+        x: 120,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out"
+      }, "-=0.4");
+  });
+
+  // Mobile Context (width < 1024px)
+  mm.add("(max-width: 1023px)", () => {
+    // Scroll fade animations for elements without pinning or horizontal layouts
+    gsap.utils.toArray(".benefits-container .card, .benefit-product-wrapper").forEach(el => {
+      gsap.from(el, {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        }
+      });
+    });
   });
 
   // ===================== GSAP SCROLL PARALLAX SYSTEM =====================
@@ -1807,48 +1945,6 @@ footer {
       );
     }
   });
-
-  // ===================== GSAP PINNED BENEFITS TIMELINE =====================
-  // Pins the benefits section while scrolling, animating elements in sequence
-  const benefitsTimeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#benefits-section",
-      start: "top top",
-      end: "+=150%", // Pins the section for 1.5x viewport height scroll distance
-      pin: true,
-      scrub: 1, // Smooth scrub easing
-      anticipatePin: 1
-    }
-  });
-
-  benefitsTimeline
-    // 1. Fade in and scale up the center product wrapper (image + glow)
-    .from(".benefit-product-wrapper", {
-      scale: 0.65,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    })
-    // 2. Slide in the left card
-    .from("#benefit-card-1", {
-      x: -120,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    }, "-=0.6")
-    // 3. Slide in the right cards
-    .from("#benefit-card-2", {
-      x: 120,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power2.out"
-    }, "-=0.6")
-    .from("#benefit-card-3", {
-      x: 120,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power2.out"
-    }, "-=0.4");
 
   // ===================== CUSTOM TRICOLOR PARTICLES =====================
   const pCanvas = document.getElementById('particles-canvas');
