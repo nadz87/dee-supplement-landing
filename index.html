@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>USN Hardcore Whey gH - Anabolic Protein Complex</title>
+<meta name="description" content="Fuel extreme muscle growth, strength, and recovery with USN Hardcore Whey gH. The ultimate all-in-one anabolic protein complex fortified with creatine, glycine, and tribulus." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* CSS Reset & Variables */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg-primary: #050505;
+  --bg-secondary: #0d0d0d;
+  --bg-tertiary: #141414;
+  --brand-blue: #0033A0;
+  --brand-blue-glow: rgba(0, 51, 160, 0.4);
+  --brand-red: #E4002B;
+  --brand-red-glow: rgba(228, 0, 43, 0.4);
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-tertiary: #525252;
+  --glass-bg: rgba(13, 13, 13, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --container-max: 72rem;
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html, body { overflow-x: hidden; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fixed { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+
+/* Custom Tri-Color Particles (Blue, Chocolate, White) */
+#particles-canvas {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 2;
+}
+
+/* Glassmorphic Navbar */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+  background: rgba(5, 5, 5, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+}
+nav .brand { display: flex; align-items: center; gap: 0.75rem; }
+nav .brand-logo {
+  font-family: var(--font-display);
+  font-weight: 900; font-size: 1.75rem;
+  letter-spacing: -0.05em;
+  color: var(--text-primary);
+  display: flex; align-items: center;
+}
+nav .brand-logo span { color: var(--brand-blue); }
+nav .brand-logo sub {
+  color: var(--brand-red);
+  font-size: 0.875rem;
+  font-weight: 800;
+  margin-left: 0.15rem;
+  letter-spacing: normal;
+  bottom: -0.1em;
+}
+nav .nav-links { display: flex; align-items: center; gap: 2rem; }
+nav .nav-links a {
+  font-family: var(--font-display);
+  font-weight: 500; font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: var(--transition-smooth);
+}
+nav .nav-links a:hover { color: var(--text-primary); text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+nav .nav-cta {
+  display: flex; align-items: center; gap: 1.5rem;
+}
+nav .nav-cta .btn-buy {
+  background: var(--brand-blue);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.65rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: var(--transition-smooth);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 15px var(--brand-blue-glow);
+}
+nav .nav-cta .btn-buy:hover {
+  background: var(--brand-blue-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 51, 160, 0.6);
+}
+
+/* Parallax Sections & Backgrounds */
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.parallax-bg-wrapper {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.parallax-bg {
+  position: absolute;
+  top: -17.5%; left: 0;
+  width: 100%; height: 135%;
+  object-fit: cover;
+  will-change: transform;
+}
+.parallax-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(5, 5, 5, 0.85) 0%, rgba(5, 5, 5, 0.92) 100%);
+  z-index: 2;
+}
+
+/* Hero Section */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 2.5rem 5rem;
+  z-index: 5;
+}
+#hero .parallax-overlay {
+  background: radial-gradient(circle at center, rgba(5, 5, 5, 0.78) 0%, rgba(5, 5, 5, 0.95) 100%);
+}
+#hero .hero-container {
+  width: 100%;
+  max-width: var(--container-max);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+#hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#hero .brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(228, 0, 43, 0.1);
+  border: 1px solid rgba(228, 0, 43, 0.3);
+  padding: 0.35rem 0.85rem;
+  border-radius: 2rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--brand-red);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+#hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5.5vw, 4.25rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+#hero h1 span.glow-blue {
+  color: var(--text-primary);
+  text-shadow: 0 0 20px rgba(0, 51, 160, 0.8);
+  background: linear-gradient(135deg, #ffffff 40%, #8caeff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#hero h1 span.glow-red {
+  color: var(--brand-red);
+  text-shadow: 0 0 20px var(--brand-red-glow);
+}
+#hero .hero-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 38rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Hero Stats */
+#hero .hero-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+#hero .stat-item {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  min-width: 7.5rem;
+  transition: var(--transition-smooth);
+}
+#hero .stat-item:hover {
+  border-color: rgba(0, 51, 160, 0.4);
+  transform: translateY(-2px);
+}
+#hero .stat-num {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+}
+#hero .stat-num span {
+  color: var(--brand-red);
+}
+#hero .stat-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* CTAs */
+#hero .ctas {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+#hero .cta-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--brand-red);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1rem 2.25rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px var(--brand-red-glow);
+}
+#hero .cta-btn-primary:hover {
+  background: #ff1a40;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(228, 0, 43, 0.7);
+}
+#hero .cta-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 600;
+  border: 1px solid var(--glass-border);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+#hero .cta-btn-secondary:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* Hero Product (3D Hover Effect) */
+#hero .product-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+}
+#hero .product-glow-radial {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(0, 51, 160, 0.25) 0%, rgba(228, 0, 43, 0.08) 50%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+#hero .product-container-3d {
+  position: relative;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  cursor: grab;
+}
+#hero .product-container-3d:active {
+  cursor: grabbing;
+}
+#hero .product-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 28rem;
+  filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 20px rgba(0, 51, 160, 0.15));
+  user-select: none;
+  -webkit-user-drag: none;
+  transform: translateZ(30px);
+}
+
+/* Bounce scroll arrow */
+#hero .bounce-arrow {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  z-index: 10; display: flex; justify-content: center;
+}
+#hero .bounce-arrow svg {
+  width: 1.75rem; height: 1.75rem; color: var(--text-secondary);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30%); }
+}
+
+/* Content Area wrapper */
+#content-area {
+  position: relative;
+  z-index: 10;
+}
+
+/* Benefits Section & Grid Layout */
+#benefits-section {
+  position: relative;
+  z-index: 10;
+}
+.benefits-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 6rem 2.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+.benefit-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.benefit-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.benefit-col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.benefit-product-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 22rem;
+  display: flex;
+  justify-content: center;
+}
+.benefit-product-glow {
+  position: absolute;
+  width: 140%; height: 140%;
+  background: radial-gradient(circle, var(--brand-blue-glow) 0%, rgba(228, 0, 43, 0.1) 40%, transparent 70%);
+  z-index: 1;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+#benefit-product-img {
+  max-height: 28rem;
+  width: auto;
+  z-index: 2;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8)) drop-shadow(0 0 25px rgba(0, 51, 160, 0.2));
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Glassmorphic Cards inside Benefits grid */
+.benefits-layout-grid .card {
+  background: rgba(10, 10, 10, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  padding: 2.25rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  position: relative;
+  overflow: hidden;
+}
+.benefits-layout-grid .card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; width: 3px; height: 100%;
+  background: var(--brand-blue);
+}
+.benefits-layout-grid .card:nth-child(2)::before {
+  background: var(--brand-red);
+}
+.benefits-layout-grid .benefit-col-right .card::before {
+  background: var(--brand-red);
+}
+.benefits-layout-grid .benefit-col-right .card:nth-child(2)::before {
+  background: #ffcc00;
+}
+.benefits-layout-grid .card h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.benefits-layout-grid .card p {
+  color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;
+}
+
+/* Calculator & Serving Section */
+#calculator-section {
+  padding: 7rem 2.5rem;
+  z-index: 5;
+}
+#calculator-section .container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+#calculator-section .header-block {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto 4rem;
+}
+#calculator-section .section-subtitle {
+  font-family: var(--font-display);
+  font-size: 0.85rem; font-weight: 700;
+  color: var(--brand-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+}
+#calculator-section h2 {
+  font-family: var(--font-display);
+  font-size: 2.75rem; font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+#calculator-section .section-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Calculator Widget */
+.calc-widget {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+.calc-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calc-controls h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem; font-weight: 800;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+.calc-controls p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.calc-tabs {
+  display: flex;
+  background: #080808;
+  border-radius: 0.5rem;
+  padding: 0.35rem;
+  gap: 0.35rem;
+}
+.calc-tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.875rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: var(--transition-smooth);
+}
+.calc-tab-btn.active {
+  background: var(--brand-blue);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 51, 160, 0.4);
+}
+.calc-tab-btn:nth-child(2).active {
+  background: var(--brand-red);
+  box-shadow: 0 4px 10px var(--brand-red-glow);
+}
+
+/* Calculator Results & Progress Bars */
+.calc-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.metric-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.metric-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.metric-value {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.metric-value span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-left: 0.15rem;
+}
+.metric-bar-bg {
+  height: 0.5rem;
+  background: #080808;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.metric-bar-fill {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(90deg, var(--brand-blue) 0%, #0077ff 100%);
+  border-radius: 1rem;
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 0 10px rgba(0, 119, 255, 0.5);
+}
+.metric-row:nth-child(2) .metric-bar-fill {
+  background: linear-gradient(90deg, var(--brand-red) 0%, #ff335c 100%);
+  box-shadow: 0 0 10px rgba(255, 51, 92, 0.5);
+}
+.metric-row:nth-child(3) .metric-bar-fill {
+  background: linear-gradient(90deg, #ffcc00 0%, #ffe066 100%);
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+.metric-row:nth-child(4) .metric-bar-fill {
+  background: linear-gradient(90deg, #00e676 0%, #66ffa6 100%);
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.5);
+}
+
+/* Ingredients Section */
+#ingredients-section {
+  padding: 7rem 2.5rem;
+  z-index: 5;
+}
+#ingredients-section .container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+#ingredients-section .header-block {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto 4.5rem;
+}
+#ingredients-section .section-subtitle {
+  font-family: var(--font-display);
+  font-size: 0.85rem; font-weight: 700;
+  color: var(--brand-red);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+}
+#ingredients-section h2 {
+  font-family: var(--font-display);
+  font-size: 2.75rem; font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.ingredient-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  padding: 2.5rem 2rem;
+  border-radius: 0.75rem;
+  transition: var(--transition-smooth);
+}
+.ingredient-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(228, 0, 43, 0.4);
+  box-shadow: 0 10px 30px rgba(228, 0, 43, 0.1);
+}
+.ingredient-card .icon-wrap {
+  width: 3rem; height: 3rem;
+  background: rgba(228, 0, 43, 0.1);
+  border-radius: 0.5rem;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.5rem;
+  color: var(--brand-red);
+}
+.ingredient-card:nth-child(2) .icon-wrap {
+  background: rgba(0, 51, 160, 0.1);
+  color: var(--brand-blue);
+}
+.ingredient-card:nth-child(2):hover {
+  border-color: rgba(0, 51, 160, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 51, 160, 0.1);
+}
+.ingredient-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem; font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.ingredient-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Interactive Detail Hotspots - Floating UI Concept */
+#hotspot-section {
+  padding: 5rem 2.5rem;
+  background: radial-gradient(circle at center, rgba(13,13,13,0.95) 0%, rgba(5,5,5,1) 100%);
+  border-top: 1px solid var(--glass-border);
+}
+.hotspot-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.hotspot-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hotspot-media .glow-ring {
+  position: absolute;
+  width: 18rem; height: 18rem;
+  border-radius: 50%;
+  border: 1px dashed rgba(0, 51, 160, 0.3);
+  animation: rotateDashed 20s linear infinite;
+}
+@keyframes rotateDashed {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.hotspot-media img {
+  max-height: 24rem;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+  position: relative;
+  z-index: 2;
+}
+
+/* Pulsing Hotspot pins */
+.pin {
+  position: absolute;
+  width: 1.25rem; height: 1.25rem;
+  background: var(--brand-red);
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(228, 0, 43, 0.6);
+  animation: pulsePin 1.5s infinite;
+  display: flex; align-items: center; justify-content: center;
+}
+.pin::after {
+  content: '+';
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.pin:nth-child(2) { background: var(--brand-blue); animation-name: pulsePinBlue; }
+.pin:nth-child(2)::after { content: '+'; }
+
+@keyframes pulsePin {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(228, 0, 43, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(228, 0, 43, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(228, 0, 43, 0); }
+}
+@keyframes pulsePinBlue {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 51, 160, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(0, 51, 160, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 51, 160, 0); }
+}
+
+.pin-1 { top: 20%; left: 35%; }
+.pin-2 { top: 55%; right: 30%; }
+
+.hotspot-content {
+  display: flex;
+  flex-direction: column;
+}
+.hotspot-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--glass-border);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin-top: 1.5rem;
+  display: none;
+  animation: fadeIn 0.4s ease forwards;
+}
+.hotspot-card.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hotspot-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.2rem; font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--brand-red);
+}
+.hotspot-card.blue h4 {
+  color: var(--brand-blue);
+}
+.hotspot-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Supplement Facts Panel Section */
+#nutrition-section {
+  padding: 7rem 2.5rem;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+#nutrition-section .info-block h2 {
+  font-family: var(--font-display);
+  font-size: 2.75rem; font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+#nutrition-section .info-block p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.nutrition-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.bullet-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.bullet-icon {
+  color: var(--brand-blue);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.bullet-text h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+.bullet-text p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0 !important;
+}
+
+/* Supplement Panel Graphic */
+.supplement-panel {
+  background: #000;
+  border: 4px double #fff;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+.supplement-panel h3 {
+  font-size: 1.75rem; font-weight: 900;
+  border-bottom: 6px solid #fff;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+.supplement-panel .servings {
+  font-size: 0.85rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #fff;
+}
+.supplement-header-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  border-bottom: 4px solid #fff;
+  text-transform: uppercase;
+}
+.supplement-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-size: 0.85rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.supplement-row.bold {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+.supplement-row.indent span {
+  padding-left: 1rem;
+}
+.supplement-disclaimer {
+  font-size: 0.7rem;
+  color: #aaa;
+  margin-top: 1rem;
+  line-height: 1.3;
+}
+
+/* Purchase Checkout Section */
+#checkout-section {
+  padding: 7rem 2.5rem;
+  z-index: 5;
+}
+#checkout-section .parallax-overlay {
+  background: radial-gradient(circle at center, rgba(5, 5, 5, 0.75) 0%, rgba(5, 5, 5, 0.96) 95%);
+}
+.checkout-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+  position: relative;
+  z-index: 10;
+}
+.checkout-media {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.checkout-media img {
+  max-height: 26rem;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+}
+.checkout-media .glow {
+  position: absolute;
+  width: 15rem; height: 15rem;
+  background: var(--brand-blue-glow);
+  filter: blur(80px);
+  border-radius: 50%;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.checkout-form {
+  position: relative;
+  z-index: 2;
+}
+.checkout-form h2 {
+  font-family: var(--font-display);
+  font-size: 2.5rem; font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.checkout-form .flavor-tag {
+  color: var(--brand-red);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+.checkout-form .price-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.checkout-form .price-current {
+  font-family: var(--font-display);
+  font-size: 2.5rem; font-weight: 900;
+  color: #fff;
+}
+.checkout-form .price-original {
+  font-family: var(--font-display);
+  font-size: 1.5rem; font-weight: 500;
+  color: var(--text-tertiary);
+  text-decoration: line-through;
+}
+.checkout-form .badge-save {
+  background: var(--brand-red);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+}
+.form-group label {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+.flavor-options {
+  display: flex;
+  gap: 1rem;
+}
+.flavor-btn {
+  background: var(--bg-primary);
+  border: 1px solid var(--glass-border);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+.flavor-btn.active {
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 12px rgba(0, 51, 160, 0.4);
+  background: rgba(0, 51, 160, 0.1);
+}
+.flavor-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.qty-input {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-primary);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+.qty-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  width: 2.5rem; height: 2.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition-smooth);
+}
+.qty-btn:hover { background: rgba(255,255,255,0.05); border-radius: 0.25rem; }
+.qty-number {
+  width: 3rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Large Buy Button with Spinner */
+.buy-button-wrap {
+  margin-top: 2.5rem;
+}
+.btn-checkout {
+  width: 100%;
+  background: var(--brand-blue);
+  color: #fff;
+  border: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  box-shadow: 0 8px 25px var(--brand-blue-glow);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.btn-checkout:hover {
+  background: var(--brand-blue-hover);
+  box-shadow: 0 10px 30px rgba(0, 51, 160, 0.6);
+  transform: translateY(-2px);
+}
+.btn-checkout .spinner {
+  width: 1.25rem; height: 1.25rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: none;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.trust-badges {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--glass-border);
+}
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Footer Section */
+footer {
+  background: #030303;
+  padding: 4rem 2.5rem 2rem;
+  border-top: 1px solid var(--glass-border);
+  position: relative;
+  z-index: 5;
+}
+.footer-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+.footer-about .logo {
+  font-family: var(--font-display);
+  font-weight: 900; font-size: 1.75rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.footer-about .logo span { color: var(--brand-blue); }
+.footer-about p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  max-width: 20rem;
+}
+.footer-links h4 {
+  font-family: var(--font-display);
+  font-size: 0.95rem; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer-links ul a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: var(--transition-smooth);
+}
+.footer-links ul a:hover { color: #fff; }
+.footer-bottom {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+.footer-socials {
+  display: flex;
+  gap: 1.25rem;
+}
+.footer-socials a {
+  color: var(--text-secondary);
+  transition: var(--transition-smooth);
+}
+.footer-socials a:hover { color: #fff; }
+.footer-socials svg { width: 1.2rem; height: 1.2rem; }
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  #hero .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+  }
+  #hero .content {
+    align-items: center;
+  }
+  #hero h1 {
+    font-size: clamp(2rem, 6.5vw, 3.5rem);
+  }
+  #hero .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero .hero-stats {
+    justify-content: center;
+  }
+  #hero .ctas {
+    justify-content: center;
+  }
+  #hero .product-img {
+    max-height: 24rem;
+  }
+  .benefits-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .benefit-col-center {
+    order: -1;
+  }
+  .calc-widget {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2.25rem;
+  }
+  .ingredients-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .hotspot-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  #nutrition-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .checkout-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  nav .nav-links { display: none; }
+  .benefits-container { padding: 4rem 1.5rem; }
+  #calculator-section { padding: 4rem 1.5rem; }
+  #ingredients-section { padding: 4rem 1.5rem; }
+  #nutrition-section { padding: 4rem 1.5rem; }
+  #checkout-section { padding: 4rem 1.5rem; }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Custom Particle Overlay Canvas -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- Glassmorphic Header / Navbar -->
+<nav>
+  <div class="brand">
+    <a href="#" class="brand-logo"><img src="logo.png" alt="DEE Supplement Logo" style="height: 4.2rem; display: block;" /></a>
+  </div>
+  <div class="nav-links">
+    <a href="#hero">Overview</a>
+    <a href="#benefits-section">Dosage</a>
+    <a href="#ingredients-section">Ingredients</a>
+    <a href="#nutrition-section">Nutrition Facts</a>
+  </div>
+  <div class="nav-cta">
+    <a href="#checkout-section" class="btn-buy">Buy Now</a>
+  </div>
+</nav>
+
+<!-- Page Content Wrapper -->
+<div id="content-area">
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="parallax-section">
+    <!-- Parallax Background -->
+    <div class="parallax-bg-wrapper">
+      <img src="bg-hero.jpg" class="parallax-bg" alt="USN Athlete Gym Training Lat Pulldown" />
+      <div class="parallax-overlay"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Hero Content Column -->
+      <div class="content">
+        <div class="brand-badge">
+          <svg style="width:1rem;height:1rem;" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2zm0 3.99L19.53 19H4.47L12 5.99zM13 16h-2v2h2v-2zm0-6h-2v4h2v-4z"/></svg>
+          ANABOLIC STACK STIMULATED
+        </div>
+        <h1>
+          Unleash the<br>
+          <span class="glow-blue">Anabolic</span> <span class="glow-red">gH</span> Force.
+        </h1>
+        <p class="hero-desc">
+          USN Hardcore Whey gH is the ultimate all-in-one protein stack. Specifically engineered for athletes demanding massive gains, explosive strength, and lightning-fast recovery.
+        </p>
+
+        <!-- Core Specs Grid -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">54<span>g</span></div>
+            <div class="stat-label">Anabolic Protein</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">6<span>g</span></div>
+            <div class="stat-label">Creatine Stack</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2.4<span>g</span></div>
+            <div class="stat-label">Glycine Recovery</div>
+          </div>
+        </div>
+
+        <!-- CTA Action Buttons -->
+        <div class="ctas">
+          <a href="#checkout-section" class="cta-btn-primary">
+            Claim Your Tub
+            <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="#ingredients-section" class="cta-btn-secondary">Explore Formula</a>
+        </div>
+      </div>
+
+      <!-- Floating 3D Product Column -->
+      <div class="product-wrapper" id="hero-product-wrapper">
+        <div class="product-glow-radial"></div>
+        <div class="product-container-3d" id="hero-product-3d">
+          <img src="product.png" alt="USN Hardcore Whey gH Chocolate Tub" class="product-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bounce Down Arrow Indicator -->
+    <div class="bounce-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+    </div>
+  </section>
+
+  <!-- BENEFITS / CARDS PARALLAX SECTION -->
+  <section id="benefits-section" class="parallax-section">
+    <!-- Parallax Background -->
+    <div class="parallax-bg-wrapper">
+      <img src="bg-ingredients.jpg" class="parallax-bg" alt="USN Athlete Gym Training Triceps Cable" />
+      <div class="parallax-overlay"></div>
+    </div>
+    
+    <!-- Pinned Scroll Content Wrapper -->
+    <div class="benefits-container">
+      <div class="benefits-layout-grid">
+        <!-- Left column -->
+        <div class="benefit-col-left">
+          <div class="card" id="benefit-card-1">
+            <h3>54g Multi-Stage Protein</h3>
+            <p>A precision blend of rapid-absorbing Whey Protein Concentrate and Isolate combined with Soy Protein. Formulated to keep muscle protein synthesis elevated for hours, facilitating lean tissue hypertrophy.</p>
+          </div>
+        </div>
+        
+        <!-- Center product column (New Feature: Uploaded Image centered) -->
+        <div class="benefit-col-center">
+          <div class="benefit-product-wrapper">
+            <div class="benefit-product-glow"></div>
+            <img src="product.png" id="benefit-product-img" alt="USN Hardcore Whey gH Tub" />
+          </div>
+        </div>
+        
+        <!-- Right column -->
+        <div class="benefit-col-right">
+          <div class="card" id="benefit-card-2">
+            <h3>Explosive Anabolic Stack</h3>
+            <p>Fortified with 6g of Creatine Monohydrate to increase muscular ATP generation, 2.4g of recovery-enhancing Glycine, and Tribulus Terrestris to support strength, power, and natural hormone optimization.</p>
+          </div>
+          <div class="card" id="benefit-card-3">
+            <h3>Endurance & Acid Buffer</h3>
+            <p>Contains active Beta-Alanine to buffer hydrogen ion accumulation during intensive training. Delays performance fatigue, allowing you to smash through boundaries and hit more reps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOAL & DOSAGE CALCULATOR SECTION -->
+  <section id="calculator-section" class="parallax-section">
+    <!-- Parallax Background -->
+    <div class="parallax-bg-wrapper">
+      <img src="bg-dosage.jpg" class="parallax-bg" alt="USN Athlete Gym Training Dumbbell Curl" />
+      <div class="parallax-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="header-block">
+        <p class="section-subtitle">Optimal Intake</p>
+        <h2>Dose Calculator</h2>
+        <p class="section-desc">Tailor your Hardcore Whey gH dosage to match your training phase and body mass requirements.</p>
+      </div>
+
+      <div class="calc-widget">
+        <div class="calc-controls">
+          <h3>Select Training Goal</h3>
+          <p>Toggle between maintenance and hardcore anabolic phases. Higher intensity workout protocols require doubled nutritional intake to fuel synthesis and recovery.</p>
+          <div class="calc-tabs">
+            <button class="calc-tab-btn active" onclick="setDose(1)">Anabolic Maintenance</button>
+            <button class="calc-tab-btn" onclick="setDose(2)">Hardcore Growth</button>
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <!-- Metric 1: Protein -->
+          <div class="metric-row">
+            <div class="metric-header">
+              <span class="metric-name">Total Protein Delivery</span>
+              <span class="metric-value" id="calc-protein">27<span>g</span></span>
+            </div>
+            <div class="metric-bar-bg">
+              <div class="metric-bar-fill" id="bar-protein" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <!-- Metric 2: Creatine Stack -->
+          <div class="metric-row">
+            <div class="metric-header">
+              <span class="metric-name">Creatine Monohydrate</span>
+              <span class="metric-value" id="calc-creatine">3<span>g</span></span>
+            </div>
+            <div class="metric-bar-bg">
+              <div class="metric-bar-fill" id="bar-creatine" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <!-- Metric 3: Glycine Stack -->
+          <div class="metric-row">
+            <div class="metric-header">
+              <span class="metric-name">L-Glycine Support</span>
+              <span class="metric-value" id="calc-glycine">1.2<span>g</span></span>
+            </div>
+            <div class="metric-bar-bg">
+              <div class="metric-bar-fill" id="bar-glycine" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <!-- Metric 4: Energy (Kcal) -->
+          <div class="metric-row">
+            <div class="metric-header">
+              <span class="metric-name">Anabolic Energy Yield</span>
+              <span class="metric-value" id="calc-calories">146<span>kcal</span></span>
+            </div>
+            <div class="metric-bar-bg">
+              <div class="metric-bar-fill" id="bar-calories" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE HOTSPOTS DETAILED GRAPHIC -->
+  <section id="hotspot-section">
+    <div class="hotspot-container">
+      <div class="hotspot-media">
+        <div class="glow-ring"></div>
+        <img src="product.png" alt="USN Whey gH Product breakdown" />
+        <!-- Interactive Pins -->
+        <div class="pin pin-1" onclick="showHotspot(1)"></div>
+        <div class="pin pin-2" onclick="showHotspot(2)"></div>
+      </div>
+
+      <div class="hotspot-content">
+        <p class="section-subtitle" style="color:var(--brand-red)">Formula Highlights</p>
+        <h2 style="font-family:var(--font-display);font-size:2.5rem;font-weight:900;text-transform:uppercase;margin:0.5rem 0 1rem;">Click container parts to inspect</h2>
+        <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;">Tap the glowing pulsing nodes on the product container to discover what makes this gH formula the industry benchmark.</p>
+
+        <!-- Hotspot details -->
+        <div class="hotspot-card active" id="hotspot-card-1">
+          <h4>Security Seal & Authenticity</h4>
+          <p>Every USN Hardcore Whey gH tub features a verified holographic green security seal on the lid. This guarantees a verified, high-purity batch manufactured under strict GMP compliance standards. Don't settle for counterfeits.</p>
+        </div>
+        <div class="hotspot-card blue" id="hotspot-card-2">
+          <h4>Hardcore All-In-One Matrix</h4>
+          <p>Our core formulation is a multi-action protein matrix featuring test-boosting Tribulus, cell-volumizing Creatine, stamina-promoting Beta-Alanine, and structural Glycine. You no longer need to stack 4 different supplements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGREDIENTS BREAKDOWN GRID -->
+  <section id="ingredients-section" class="parallax-section">
+    <!-- Parallax Background -->
+    <div class="parallax-bg-wrapper">
+      <img src="bg-ingredients.jpg" class="parallax-bg" alt="USN Athlete Gym Training Triceps Cable" />
+      <div class="parallax-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="header-block">
+        <p class="section-subtitle">The Science</p>
+        <h2>Active Ingredients</h2>
+        <p class="section-desc">We leave nothing to guesswork. Every single ingredient is clinically researched to ensure maximum muscle hyperplasia.</p>
+      </div>
+
+      <div class="ingredients-grid">
+        <!-- Card 1 -->
+        <div class="ingredient-card">
+          <div class="icon-wrap">
+            <svg style="width:1.5rem;height:1.5rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>Creatine Monohydrate</h3>
+          <p>Increases intracellular water retention and drives ATP production during high-intensity training. Elevates explosive physical force and speeds up sets transition.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="ingredient-card">
+          <div class="icon-wrap">
+            <svg style="width:1.5rem;height:1.5rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>Beta-Alanine Stack</h3>
+          <p>A natural beta-amino acid that increases muscular carnosine levels. Buffers muscle cell acidity during extreme anaerobic bursts, delaying performance fatigue.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="ingredient-card">
+          <div class="icon-wrap">
+            <svg style="width:1.5rem;height:1.5rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z"/></svg>
+          </div>
+          <h3>L-Glycine Matrix</h3>
+          <p>Synthesizes collagen fibers and supports skeletal health. Protects and repairs tendons during maximum lifts, while encouraging natural anabolic cell recovery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPLEMENT FACTS PANEL SECTION -->
+  <section id="nutrition-section">
+    <!-- Left text -->
+    <div class="info-block">
+      <p class="section-subtitle">Transparency</p>
+      <h2>Sleek & Unmatched Nutritional Profile</h2>
+      <p>USN is committed to total transparency. There are no hidden proprietary blends. We list every single element with detailed concentrations so you know exactly what is fueling your physique.</p>
+
+      <div class="nutrition-bullets">
+        <div class="bullet-item">
+          <div class="bullet-icon">
+            <svg style="width:1.5rem;height:1.5rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="bullet-text">
+            <h4>No Added Refined Sugars</h4>
+            <p>Formulated to deliver pure lean mass building blocks without useless fat-storing sugars.</p>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">
+            <svg style="width:1.5rem;height:1.5rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="bullet-text">
+            <h4>Multi-Stage Whey Release</h4>
+            <p>Combines rapid and medium absorption profiles to protect and feed muscle tissue constantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right supplementary facts table -->
+    <div class="supplement-panel">
+      <h3>Nutrition Facts</h3>
+      <div class="servings">Serving Size: 1 Scoop (33g) / Double serving: 2 Scoops (66g)<br>Servings per Container: ~60 (based on 2.0kg)</div>
+      <div class="supplement-header-row">
+        <span>Active Nutrients</span>
+        <span>Per 33g</span>
+        <span>Per 66g</span>
+      </div>
+      <div class="supplement-row bold">
+        <span>Energy</span>
+        <span>146 kcal</span>
+        <span>292 kcal</span>
+      </div>
+      <div class="supplement-row">
+        <span>Protein</span>
+        <span>27g</span>
+        <span>54g</span>
+      </div>
+      <div class="supplement-row">
+        <span>Carbohydrates</span>
+        <span>2.9g</span>
+        <span>5.8g</span>
+      </div>
+      <div class="supplement-row indent">
+        <span>- of which sugars</span>
+        <span>1.5g</span>
+        <span>3g</span>
+      </div>
+      <div class="supplement-row">
+        <span>Total Fats</span>
+        <span>1.2g</span>
+        <span>2.4g</span>
+      </div>
+      <div class="supplement-row bold">
+        <span>Anabolic Stack</span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="supplement-row indent">
+        <span>Creatine Monohydrate</span>
+        <span>3g</span>
+        <span>6g</span>
+      </div>
+      <div class="supplement-row indent">
+        <span>L-Glycine</span>
+        <span>1.2g</span>
+        <span>2.4g</span>
+      </div>
+      <div class="supplement-row indent">
+        <span>Beta-Alanine</span>
+        <span>0.5g</span>
+        <span>1.0g</span>
+      </div>
+      <div class="supplement-row indent">
+        <span>Tribulus Terrestris</span>
+        <span>100mg</span>
+        <span>200mg</span>
+      </div>
+      <div class="supplement-disclaimer">
+        * Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs. Manufactured in a facility that processes soy, milk, and nuts.
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKOUT & CONVERT SECTION -->
+  <section id="checkout-section" class="parallax-section">
+    <!-- Parallax Background -->
+    <div class="parallax-bg-wrapper">
+      <img src="bg-checkout.jpg" class="parallax-bg" alt="USN Athlete Gym Training Kettlebell Swings" />
+      <div class="parallax-overlay"></div>
+    </div>
+
+    <div class="checkout-container">
+      <!-- Media block -->
+      <div class="checkout-media">
+        <div class="glow"></div>
+        <img src="product.png" alt="USN Hardcore Whey gH Dutch Chocolate" />
+      </div>
+
+      <!-- Action form block -->
+      <div class="checkout-form">
+        <h2>Hardcore Whey gH</h2>
+        <div class="flavor-tag">Dutch Chocolate Flavour | 2.0kg (4.4 lbs)</div>
+
+        <div class="price-block">
+          <span class="price-current">RM69.99</span>
+          <span class="price-original">RM84.99</span>
+          <span class="badge-save">Save 18%</span>
+        </div>
+
+        <div class="form-group">
+          <label>Select Flavour</label>
+          <div class="flavor-options">
+            <button class="flavor-btn active">Dutch Chocolate</button>
+            <button class="flavor-btn" disabled title="Coming Soon">Wheytella (Soon)</button>
+            <button class="flavor-btn" disabled title="Coming Soon">Vanilla Cream (Soon)</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Quantity</label>
+          <div class="qty-input">
+            <button class="qty-btn" onclick="updateQty(-1)">−</button>
+            <span class="qty-number" id="qty-display">1</span>
+            <button class="qty-btn" onclick="updateQty(1)">+</button>
+          </div>
+        </div>
+
+        <div class="buy-button-wrap">
+          <button class="btn-checkout" id="checkout-btn" onclick="triggerCheckout()">
+            <span class="spinner" id="checkout-spinner"></span>
+            <span id="checkout-text">Securely Add to Cart</span>
+          </button>
+        </div>
+
+        <!-- Trust seals -->
+        <div class="trust-badges">
+          <div class="badge-item">
+            <svg style="width:1.25rem;height:1.25rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            SSL Encryption
+          </div>
+          <div class="badge-item">
+            <svg style="width:1.25rem;height:1.25rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            GMP Certified
+          </div>
+          <div class="badge-item">
+            <svg style="width:1.25rem;height:1.25rem" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            Fast Delivery
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <div class="logo" style="margin-bottom: 1.5rem;"><img src="logo.png" alt="DEE Supplement Logo" style="height: 5.2rem; display: block;" /></div>
+      <p>Formulated for elite performance. DEE Supplement creates state of the art supplements backed by scientific research.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#hero">Overview</a></li>
+        <li><a href="#benefits-section">Dosage Widget</a></li>
+        <li><a href="#ingredients-section">Scientific Formulation</a></li>
+        <li><a href="#nutrition-section">Supplements Facts</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Legals & Safety</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">GMP Quality Check</a></li>
+        <li><a href="#">Anti-Doping Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 DEE Supplement. All rights reserved. Developed for Hardcore Brand project.</p>
+    <div class="footer-socials">
+      <a href="#"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+      <a href="#"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"/></svg></a>
+      <a href="#"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Load GSAP & ScrollTrigger from Cloudflare CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+(function() {
+  // ===================== REGISTER GSAP PLUGINS =====================
+  gsap.registerPlugin(ScrollTrigger);
+
+  // ===================== GSAP HERO LOAD ANIMATION =====================
+  // Smooth fade-in and slide-up on page load
+  const heroLoad = gsap.timeline();
+  heroLoad.from("#hero .brand-badge", { opacity: 0, y: -20, duration: 0.8, ease: "power3.out" })
+          .from("#hero h1", { opacity: 0, y: 35, duration: 1, ease: "power3.out" }, "-=0.6")
+          .from("#hero .hero-desc", { opacity: 0, y: 20, duration: 0.9, ease: "power3.out" }, "-=0.7")
+          .from("#hero .stat-item", { opacity: 0, y: 20, duration: 0.8, stagger: 0.12, ease: "power3.out" }, "-=0.7")
+          .from("#hero .ctas", { opacity: 0, y: 20, duration: 0.8, ease: "power3.out" }, "-=0.7")
+          .from("#hero-product-3d", { opacity: 0, scale: 0.78, rotate: -6, duration: 1.3, ease: "back.out(1.6)" }, "-=1.2");
+
+  // ===================== GSAP HERO SCROLLTRIGGER FADE-OUT =====================
+  // Fade out hero content smoothly as user scrolls down
+  gsap.to("#hero .hero-container", {
+    opacity: 0,
+    y: -70,
+    ease: "power1.inOut",
+    scrollTrigger: {
+      trigger: "#hero",
+      start: "top top",
+      end: "bottom 30%",
+      scrub: true
+    }
+  });
+
+  // ===================== GSAP SCROLL PARALLAX SYSTEM =====================
+  // Apply smooth ScrollTrigger-based parallax translations to backgrounds
+  gsap.utils.toArray(".parallax-section").forEach(section => {
+    const bg = section.querySelector(".parallax-bg");
+    if (bg) {
+      gsap.fromTo(bg, 
+        { y: -60 },
+        {
+          y: 60,
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
+          }
+        }
+      );
+    }
+  });
+
+  // ===================== GSAP PINNED BENEFITS TIMELINE =====================
+  // Pins the benefits section while scrolling, animating elements in sequence
+  const benefitsTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#benefits-section",
+      start: "top top",
+      end: "+=150%", // Pins the section for 1.5x viewport height scroll distance
+      pin: true,
+      scrub: 1, // Smooth scrub easing
+      anticipatePin: 1
+    }
+  });
+
+  benefitsTimeline
+    // 1. Fade in and scale up the center product wrapper (image + glow)
+    .from(".benefit-product-wrapper", {
+      scale: 0.65,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    })
+    // 2. Slide in the left card
+    .from("#benefit-card-1", {
+      x: -120,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    }, "-=0.6")
+    // 3. Slide in the right cards
+    .from("#benefit-card-2", {
+      x: 120,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power2.out"
+    }, "-=0.6")
+    .from("#benefit-card-3", {
+      x: 120,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power2.out"
+    }, "-=0.4");
+
+  // ===================== CUSTOM TRICOLOR PARTICLES =====================
+  const pCanvas = document.getElementById('particles-canvas');
+  const pCtx = pCanvas.getContext('2d');
+  let particles = [];
+
+  function resizeParticles() {
+    pCanvas.width = window.innerWidth;
+    pCanvas.height = window.innerHeight;
+    createParticles();
+  }
+
+  function createParticles() {
+    particles = [];
+    const count = Math.floor((pCanvas.width * pCanvas.height) / 10000);
+    for (let i = 0; i < count; i++) {
+      const typeRand = Math.random();
+      let type = 2;
+      if (typeRand < 0.35) {
+        type = 0; // Blue
+      } else if (typeRand < 0.7) {
+        type = 1; // Chocolate
+      }
+      
+      particles.push({
+        x: Math.random() * pCanvas.width,
+        y: Math.random() * pCanvas.height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4 - 0.1, // Upward drift
+        size: Math.random() * 2 + 0.5,
+        opacity: Math.random() * 0.5 + 0.2,
+        type: type
+      });
+    }
+  }
+
+  function animateParticles() {
+    pCtx.clearRect(0, 0, pCanvas.width, pCanvas.height);
+    for (const p of particles) {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = pCanvas.width;
+      if (p.x > pCanvas.width) p.x = 0;
+      if (p.y < 0) p.y = pCanvas.height;
+      if (p.y > pCanvas.height) p.y = pCanvas.height;
+      
+      pCtx.beginPath();
+      pCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      
+      if (p.type === 0) {
+        pCtx.fillStyle = `rgba(0, 81, 255, ${p.opacity})`;
+      } else if (p.type === 1) {
+        pCtx.fillStyle = `rgba(180, 110, 60, ${p.opacity})`; // Chocolate gold
+      } else {
+        pCtx.fillStyle = `rgba(255, 255, 255, ${p.opacity})`;
+      }
+      
+      pCtx.fill();
+    }
+    requestAnimationFrame(animateParticles);
+  }
+
+  resizeParticles();
+  window.addEventListener('resize', resizeParticles);
+  animateParticles();
+
+  // ===================== 3D PRODUCT TILT (HERO) =====================
+  const productContainer = document.getElementById('hero-product-3d');
+  const productWrapper = document.getElementById('hero-product-wrapper');
+  
+  if (productWrapper && productContainer) {
+    productWrapper.addEventListener('mousemove', (e) => {
+      const rect = productWrapper.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      
+      const rotateX = -(y / (rect.height / 2)) * 12; // tilt max 12deg
+      const rotateY = (x / (rect.width / 2)) * 12;
+      
+      productContainer.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+    });
+    
+    productWrapper.addEventListener('mouseleave', () => {
+      productContainer.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+    });
+  }
+})();
+
+// ===================== DOSAGE CALCULATOR STATE =====================
+function setDose(level) {
+  const btns = document.querySelectorAll('.calc-tab-btn');
+  btns.forEach(btn => btn.classList.remove('active'));
+  
+  btns[level - 1].classList.add('active');
+  
+  const elements = {
+    protein: document.getElementById('calc-protein'),
+    creatine: document.getElementById('calc-creatine'),
+    glycine: document.getElementById('calc-glycine'),
+    calories: document.getElementById('calc-calories'),
+    barProtein: document.getElementById('bar-protein'),
+    barCreatine: document.getElementById('bar-creatine'),
+    barGlycine: document.getElementById('bar-glycine'),
+    barCalories: document.getElementById('bar-calories')
+  };
+
+  if (level === 1) {
+    elements.protein.innerHTML = '27<span>g</span>';
+    elements.creatine.innerHTML = '3<span>g</span>';
+    elements.glycine.innerHTML = '1.2<span>g</span>';
+    elements.calories.innerHTML = '146<span>kcal</span>';
+    
+    elements.barProtein.style.width = '50%';
+    elements.barCreatine.style.width = '50%';
+    elements.barGlycine.style.width = '50%';
+    elements.barCalories.style.width = '50%';
+  } else {
+    elements.protein.innerHTML = '54<span>g</span>';
+    elements.creatine.innerHTML = '6<span>g</span>';
+    elements.glycine.innerHTML = '2.4<span>g</span>';
+    elements.calories.innerHTML = '292<span>kcal</span>';
+    
+    elements.barProtein.style.width = '100%';
+    elements.barCreatine.style.width = '100%';
+    elements.barGlycine.style.width = '100%';
+    elements.barCalories.style.width = '100%';
+  }
+}
+
+// ===================== INTERACTIVE HOTSPOT PINS =====================
+function showHotspot(id) {
+  const cards = document.querySelectorAll('.hotspot-card');
+  cards.forEach(card => card.classList.remove('active'));
+  
+  const targetCard = document.getElementById(`hotspot-card-${id}`);
+  if (targetCard) {
+    targetCard.classList.add('active');
+  }
+}
+
+// ===================== QUANTITY & CART ANIMATION =====================
+let qty = 1;
+function updateQty(amount) {
+  qty = Math.max(1, qty + amount);
+  document.getElementById('qty-display').innerText = qty;
+}
+
+function triggerCheckout() {
+  const btn = document.getElementById('checkout-btn');
+  const spinner = document.getElementById('checkout-spinner');
+  const text = document.getElementById('checkout-text');
+  
+  btn.disabled = true;
+  spinner.style.display = 'inline-block';
+  text.innerText = 'Adding to Cart...';
+  
+  setTimeout(() => {
+    spinner.style.display = 'none';
+    text.innerText = '✔ Added to Cart!';
+    btn.style.background = '#00e676';
+    btn.style.boxShadow = '0 8px 25px rgba(0, 230, 118, 0.4)';
+    
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.style.background = 'var(--brand-blue)';
+      btn.style.boxShadow = '0 8px 25px var(--brand-blue-glow)';
+      text.innerText = 'Securely Add to Cart';
+    }, 2000);
+  }, 1500);
+}
+</script>
+</body>
+</html>
